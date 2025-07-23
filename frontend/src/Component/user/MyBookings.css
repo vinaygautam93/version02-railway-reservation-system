@@ -1,0 +1,162 @@
+.my-bookings-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #4b0082;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 2rem 0 1rem;
+  border-left: 6px solid #4b0082;
+  padding-left: 1rem;
+}
+
+.no-bookings {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #777;
+}
+
+.bookings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.booking-card {
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.booking-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.booking-header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.status-badge {
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-badge.confirmed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.cancelled {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.booking-details p {
+  margin: 0.4rem 0;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.cancel-button,
+.confirm-button {
+  margin-top: 1.2rem;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cancel-button {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #d93636;
+  transform: scale(1.05);
+}
+
+.confirm-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.confirm-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.loader {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+  color: #6a5acd;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .booking-card {
+    padding: 1.2rem;
+  }
+
+  .booking-header h2 {
+    font-size: 1.3rem;
+  }
+}

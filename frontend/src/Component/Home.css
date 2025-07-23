@@ -1,0 +1,54 @@
+.homepage {
+  font-family: Arial, sans-serif;
+  background: url('../assets/TrainHD2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.navbar {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-content {
+  flex: 1;
+  padding: 1rem;
+  margin: 0rem 1rem;
+  border-radius: 8px;
+}
+
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer a {
+  color: #ecf0f1;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.main-content p{
+  font-size: 1.2rem;
+  color: #FFF;
+}

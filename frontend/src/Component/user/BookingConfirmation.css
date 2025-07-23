@@ -1,0 +1,39 @@
+.confirmation-page {
+  padding: 40px;
+  text-align: center;
+}
+
+.booking-summary {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.booking-summary h3 {
+  margin-top: 20px;
+  color: #007bff;
+}
+
+.booking-summary p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.confirm-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background-color: #218838;
+}

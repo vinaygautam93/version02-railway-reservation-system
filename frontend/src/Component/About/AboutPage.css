@@ -1,0 +1,70 @@
+.about-container {
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 1s ease-in;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  animation: slideDown 1s ease-out;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.about-section {
+  margin-bottom: 2.5rem;
+  animation: fadeInUp 1s ease-in;
+}
+
+.about-section h2 {
+  color: #34495e;
+  margin-bottom: 1rem;
+}
+
+.about-section p,
+.about-section ul {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-section ul {
+  padding-left: 1.5rem;
+}
+
+.about-section li {
+  margin-bottom: 0.6rem;
+}
+
+.tech-stack ul li::before,
+.achievements ul li::before {
+  content: '✔️';
+  margin-right: 0.5rem;
+  color: #27ae60;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
